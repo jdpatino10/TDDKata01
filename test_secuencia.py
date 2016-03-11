@@ -19,3 +19,7 @@ class TestSecuencia(TestCase):
     def test_Iteracion2cadenaVacia(self):
         self.assertEqual(Secuencia().verificarSecuencia("")[0], 0, "Cadena vacia")
         self.assertEqual(Secuencia().verificarSecuencia("")[1], 0, "Cadena vacia")
+
+    def test_Iteracion2conUnNumero(self):
+        self.assertEqual(Secuencia().verificarSecuencia("2")[0], 1, "Con un numero")
+        self.assertEqual(Secuencia().verificarSecuencia("2")[1], 2, "Con un numero")
