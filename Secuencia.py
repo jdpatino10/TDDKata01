@@ -6,4 +6,4 @@ class Secuencia:
             arreglo=cadena.split(",")
             return [len(arreglo)]
         else:
-            return [1]
+            return [1,int(cadena)]
