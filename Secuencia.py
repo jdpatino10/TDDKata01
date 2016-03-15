@@ -7,9 +7,11 @@ class Secuencia:
             arreglo=map(int, arreglo)
             suma=0.0
             prome=0.0
-            if len(arreglo)==2:
-                suma= suma + arreglo[0]+ arreglo[1]
-            prome=suma/2
+
+            for i in arreglo:
+                suma=suma+i
+
+            prome=suma/len(arreglo)
 
             return [len(arreglo), min(arreglo), max(arreglo), prome]
 
