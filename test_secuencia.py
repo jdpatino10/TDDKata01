@@ -46,3 +46,8 @@ class TestSecuencia(TestCase):
         self.assertEqual(Secuencia().verificarSecuencia("1,4")[0], 2, "Con dos numeros")
         self.assertEqual(Secuencia().verificarSecuencia("1,4")[1], 1, "Con dos numeros")
         self.assertEqual(Secuencia().verificarSecuencia("1,4")[2], 4, "Con dos numeros")
+
+    def test_Iteracion3conNNumeros(self):
+        self.assertEqual(Secuencia().verificarSecuencia("8,4,4,3,5,6")[0], 6, "Con N numeros")
+        self.assertEqual(Secuencia().verificarSecuencia("8,4,4,3,5,6")[1], 3, "Con N numeros")
+        self.assertEqual(Secuencia().verificarSecuencia("8,4,4,3,5,6")[2], 8, "Con N numeros")

@@ -7,8 +7,10 @@ class Secuencia:
             arreglo=map(int, arreglo)
 
             maximo=arreglo[1]
-            if int(arreglo[0]) > int(arreglo[1]):
-                maximo=arreglo[0]
+            if len(arreglo)==2:
+
+                if int(arreglo[0]) > int(arreglo[1]):
+                    maximo=arreglo[0]
 
 
             return [len(arreglo), min(arreglo), int(maximo)]
