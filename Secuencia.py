@@ -7,4 +7,4 @@ class Secuencia:
             arreglo=map(int, arreglo)
             return [len(arreglo), min(arreglo)]
         else:
-            return [1,int(cadena)]
+            return [1,int(cadena), int(cadena)]
