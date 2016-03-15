@@ -9,4 +9,4 @@ class Secuencia:
             return [len(arreglo), min(arreglo), max(arreglo)]
 
         else:
-            return [1,int(cadena), int(cadena)]
+            return [1,int(cadena), int(cadena), int(cadena)]
