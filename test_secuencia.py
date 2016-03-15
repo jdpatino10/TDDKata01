@@ -31,3 +31,8 @@ class TestSecuencia(TestCase):
     def test_Iteracion2conNNumeros(self):
         self.assertEqual(Secuencia().verificarSecuencia("8,4,4,3,5,6")[0], 6, "Con N numeros")
         self.assertEqual(Secuencia().verificarSecuencia("8,4,4,3,5,6")[1], 3, "Con N numeros")
+
+    def test_Iteracion3cadenaVacia(self):
+        self.assertEqual(Secuencia().verificarSecuencia("")[0], 0, "Cadena vacia")
+        self.assertEqual(Secuencia().verificarSecuencia("")[1], 0, "Cadena vacia")
+        self.assertEqual(Secuencia().verificarSecuencia("")[2], 0, "Cadena vacia")
