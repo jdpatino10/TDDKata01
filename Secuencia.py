@@ -1,7 +1,7 @@
 class Secuencia:
     def verificarSecuencia(self,cadena):
         if cadena=="":
-            return [0,0]
+            return [0,0,0]
         elif "," in cadena:
             arreglo=cadena.split(",")
             arreglo=map(int, arreglo)
